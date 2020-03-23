@@ -5,7 +5,7 @@ var helloWorld = function()  {
 }
 
 function sayHello(input) {
-    if (input === undefined || input === true || input === false) {
+    if (typeof input === 'boolean' || input === undefined) {
         return "Hello, World!";
     }
     return "Hello, " + input + "!";
