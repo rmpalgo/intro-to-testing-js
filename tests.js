@@ -56,3 +56,13 @@ describe('sayHello', function () {
     })
 
 });
+
+describe('isFive', function() {
+   it('should be a defined function', function() {
+       expect(typeof isFive).toBe('function');
+   });
+   it('isFive() should return a boolean when executed', function() {
+       expect(isFive()).toBe('boolean');
+   });
+
+});
