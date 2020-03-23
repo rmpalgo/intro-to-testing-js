@@ -39,4 +39,20 @@ describe('sayHello', function () {
     it('sayHello(false) should return "Hello, World!" when executed', function() {
         expect(sayHello(false)).toBe("Hello, World!");
     });
+    it('sayHello(null) should return "Hello, World!" when executed', function() {
+        expect(sayHello(null)).toBe('Hello, World!');
+    });
+    it('sayHello("") should return "Hello, World!" when executed', function() {
+        expect(sayHello("")).toBe('Hello, World!');
+    });
+    it('sayHello(2.3) should return "Hello, World!" when executed', function() {
+        expect(sayHello(2.3)).toBe("Hello, World!");
+    });
+    it('sayHello("5") should return "Hello, World!" when executed', function() {
+        expect(sayHello("5")).toBe("Hello, World!");
+    });
+    it('sayHello(array) should return "Hello, World!" when executed', function() {
+        expect(sayHello([1,2,3])).toBe("Hello, World!");
+    })
+
 });
