@@ -64,5 +64,10 @@ describe('isFive', function() {
    it('isFive() should return a boolean when executed', function() {
        expect(isFive()).toBe('boolean');
    });
-
+    it('isFive(5) should return a boolean true when executed', function() {
+        expect(isFive(5)).toBe(true);
+    });
+    it('isFive("5") should return a boolean true when executed', function () {
+        expect(isFive("5")).toBe(true);
+    });
 });
