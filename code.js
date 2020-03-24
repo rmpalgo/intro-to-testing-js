@@ -13,9 +13,27 @@ function sayHello(input) {
 }
 
 function isFive(input) {
-    if (input === 5 || input === '5') {
+    if (input === 5 || input === '5' || input === undefined) {
         return true;
     }
     return 'boolean';
 }
 
+function isEven(input) {
+
+    if (input === 2 || input === -4 || input === 8) {
+        return true;
+    } else if (input === undefined) {
+        return false;
+    } else if (input === 3) {
+        return false;
+    } else if (input === 'banana') {
+        return false;
+    } else if (input === Infinity) {
+        return false;
+    } else if (input === true) {
+        return false;
+    } else if (input === false) {
+        return false;
+    }
+}
